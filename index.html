@@ -25,15 +25,15 @@
           </nav>
     </header>
     <main>
-        <section class="container py-3">
-            <p>Presiona el boton COMENZAR y adivina el numero</p>
+        <section class="container py-3" id="seccionJuego">
+            <p>Presiona el boton COMENZAR y adivina el numero entre el 1 y el 100</p>
             <div class="d-flex justify-content-center">
-                <button class="btn btn-danger">Comenzar</button>
+                <button class="btn btn-danger" onclick="getRandomNum()">Comenzar</button>
             </div>  
-            <form>
-                <label>Adivina adivinador</label>
+            <form id="ingresoNum">
+                <label class="form-label">Adivina adivinador</label>
                 <div class="d-flex justify-content-center">
-                    <input class="form-control" placeholder="Ej: 15">
+                    <input type="number" class="form-control me-2" placeholder="Ej: 15">
                     <button type="submit" class="btn btn-primary">Enviar</button>
 
                 </div>
